@@ -20,4 +20,5 @@ const timeConvertToWord = () => {
     timeDisplay.textContent = wordTime;
     div.appendChild(timeDisplay);
 }
-setTimeout(timeConvertToWord(), 1000); //calling the function each seconds
+timeConvertToWord();
+setTimeout(location.reload(), 120000); //calling the function each seconds
