@@ -27,10 +27,16 @@ setInterval(function () {
     div.innerHTML = "";
     if (minutes > 50) {
         wordTime = `${60 - minutes} MINUTES TO ${hours + 1}`;
-    } else if (minutes > 0 && minutes <= 30) {
+    } else if (minutes === 15) {
+        wordTime = `IT'S QUARTER PAST ${hours}`
+    } else if (minutes === 45) {
+        wordTime = `IT'S QUARTER TO ${hours + 1}`
+    } else if (minutes > 0 && minutes < 30) {
         wordTime = `AFTER ${hours}`;
     } else if (minutes > 30) {
         wordTime = `${minutes} MINUTES PAST ${hours}`
+    } else if (minutes === 30) {
+        wordTime = `IT'S HALF PAST ${hours}`
     } else if (minutes === 0) {
         wordTime = `${hours}'o CLOCK`
     }
