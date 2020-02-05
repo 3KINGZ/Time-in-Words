@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background-color: rgb(80, 109, 80);
+    color: rgb(255, 230, 0);
+}
+
+.title {
+    color: goldenrod;
+    text-decoration: underline;
+    font-family: 'Roboto Mono', monospace;
+}
+
+div {
+    font-size: 30px;
+    font-family: 'Racing Sans One',
+        cursive;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: linear-gradient(to right, #2dce89, #11cdef);
+    ;
+    color: white;
+    text-align: center;
+}
