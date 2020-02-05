@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca23f40b1fd1dbb5db42aea812ec033f31a3342d
 setInterval(function () {
     let time = moment(); //date object using the moment library so i can get time in 12-hour format
     let div = document.querySelector("#time");
