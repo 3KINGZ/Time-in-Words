@@ -1,9 +1,9 @@
 setInterval(function () {
-    let time = new Date; //date object
+    let time = moment(); //date object using the moment library so i can get time in 12-hour format
     let div = document.querySelector("#time");
     let wordTime;
-    let hours = time.getHours();
-    let minutes = time.getMinutes();
+    let hours = Number(time.format("h"));
+    let minutes = time.minute();
     let timeDisplay = document.createElement("h1"); //selecting and assigning values to DOM elements
     div.innerHTML = "";
     if (minutes > 50) {
